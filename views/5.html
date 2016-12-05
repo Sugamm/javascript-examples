@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript output technique</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>JavaScript output technique</h1>	
+<p>Window.alert() command.</p>
+<button type="button" onclick="window.alert('Hi, this is an alert!')">Click me!</button>
+
+
+<br>
+<p>document.getElementById('Demo').innerHTML = "Hi this is an message";</p>
+<p id="Demo"></p>
+<script type="text/javascript">
+	document.getElementById('Demo').innerHTML="Hi this is an message";
+</script>
+
+<br>
+<p>console.log('This is an message!');</p>
+<p>Activate debugging in your browser (Chrome, IE, Firefox) with F12, and select "Console" in the debugger menu.</p>
+<script type="text/javascript">
+	console.log('this is an message');
+	console.log(6+3);
+	console.log(6+10);
+</script>
+
+<br>
+<p>Document.write('This is an message'); command</p>
+<script type="text/javascript">
+	document.write("this is an message form document.write();");
+</script>
+</body>
+</html>

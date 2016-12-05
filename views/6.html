@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Where to insert JavaScript!!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function myFunction(){
+			document.getElementById('demo').innerHTML = "Paragraph Changed";
+		}
+		function myFunctionBack(){
+			document.getElementById('demo').innerHTML = "A Paragraph";
+		}
+	</script>
+</head>
+<body>
+	<h1>Where to insert JavaScript!!</h1>
+	<a href="index.html">Home</a>
+	<h4 id="demo">A Paragraph</h4>
+	<p>JavaScript in Head</p>
+	<button type="button" onclick="myFunction()">Click Me!</button>
+	<button type="button" onclick="myFunctionBack()">Back Me!</button>
+	<br>
+	<p>JavaScript in Body</p>
+	<button type="button" onclick="myFunctionbody()">Click Me!</button>
+	<button type="button" onclick="myFunctionBackbody()">Back Me!</button>
+	<script type="text/javascript">
+		function myFunctionbody(){
+			document.getElementById('demo').innerHTML = "Paragraph Changed in body";
+		}
+		function myFunctionBackbody(){
+			document.getElementById('demo').innerHTML = "A Paragraph in body";
+		}
+	</script>
+
+</body>
+</html>
