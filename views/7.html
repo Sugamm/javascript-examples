@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Syntax</title>	
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>JavaScript Syntax</h1>
+<a href="index.html">Home</a>
+
+<p>Alert Message will define each one of them.</p>
+<p id="demo"></p>
+<button type="button" onclick="myStatements();">Javascript statements</button>
+<button type="button" onclick="myNumber();">Javascript numbers</button>
+<button type="button" onclick="myString();">Javascript strings</button>
+<button type="button" onclick="myExp();">Javascript expression</button>
+<button type="button" onclick="myKeyword();">Javascript keywords</button>
+<button type="button" onclick="myVar();">Javascript variables</button>
+<button type="button" onclick="myAss();">Javascript assignment</button>
+<button type="button" onclick="myOper();">Javascript operators</button>
+<button type="button" onclick="myCase();">Javascript is case sensitive</button>
+<script type="text/javascript">
+	function myStatements() {
+		var x = 6;
+		var y = 10;
+		var z = x+y;
+		document.getElementById('demo').innerHTML = "Statements are separated by semicolons and The variables x, y, and z are assigned the values 5, 6, and 16. Z is Sum of x and y " + z;
+	}
+
+	function myNumber(){
+		var x=10.50;
+		 document.getElementById('demo').innerHTML = "Number can be written with or without decimals example "+ x;
+	}
+
+	function myString(){
+		document.getElementById('demo').innerHTML = "Strings can be written with double or single quotes"; 
+	}
+	function myExp(){
+		document.getElementById('demo').innerHTML = "Expressions compute to values. Example 5 * 10  = " + 5 * 10; 
+	}
+	function myKeyword(){
+		var x = 5 + 6;
+		var y = x * 10;
+		document.getElementById('demo').innerHTML = "The var Keyword Creates a Variable --> " + y;
+	}
+	function myVar(){
+		var x;
+		x=6;
+		document.getElementById("demo").innerHTML = "In this example, x is defined as a variable. Then, x is assigned the value of 6 : " + x;
+	}
+	function myAss(){
+		document.getElementById("demo").innerHTML = "Not Define";
+	}
+	function myOper(){
+		document.getElementById("demo").innerHTML = "JavaScript uses arithmetic operators to compute values (just like algebra). ";
+	}
+	function myCase(){
+		var X = "SUGAM";
+		var x = "sugam";
+		document.getElementById('demo').innerHTML = "Capital X is : " + X ;
+	}
+</script>
+</body>
+</html>
